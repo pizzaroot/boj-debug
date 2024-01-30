@@ -1,0 +1,20 @@
+{
+    "name": "BOJ Debug",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.acmicpc.net/problem/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "program.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
